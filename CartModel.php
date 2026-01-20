@@ -3,7 +3,7 @@ require_once __DIR__ . '/../core/db.php';
 
 class CartModel
 {
-    public function addOrIncrementProduct(?productID)
+    public function addOrIncrementProduct($productID)
     {
         $conn = getDbConnection();
         $productID = (int)$productID;
